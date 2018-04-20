@@ -16,6 +16,7 @@ void print(char* str){
 void printn(char* str,int length){
     system_call(SYS_WRITE,STDOUT,str,length);
     system_call(SYS_WRITE,STDOUT,"\n",1);
+
 }
 void printPath(char* path[]){
     print(*path);
