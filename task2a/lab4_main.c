@@ -87,7 +87,6 @@ void recPrintDir(char* filepath,int size){
         if(simple_strcmp(d->d_name,".")!=0&&simple_strcmp(d->d_name,"..")) {
             d_type = *(buf + bpos + d->d_reclen - 1);
             if (d_type ==4&&d->d_name[size+pathSize]!='.'){
-                /*printn(myPath, size + pathSize+1);*/
                 recPrintDir(myPath,size+pathSize+1);
             }
             else{
