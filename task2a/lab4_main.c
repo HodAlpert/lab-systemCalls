@@ -1,6 +1,5 @@
 #include "lab4_util.h"
 #include <dirent.h>
-#include <printf.h>
 #include <fcntl.h>
 
 
